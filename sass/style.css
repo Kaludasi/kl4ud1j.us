@@ -1,0 +1,53 @@
+html {
+  background-color: rgb(15, 15, 15);
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.backgroundDiv {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 100px;
+}
+
+.matrix {
+  -webkit-animation: fall 10s linear forwards;
+          animation: fall 10s linear forwards;
+  position: absolute;
+  top: -20px;
+}
+
+@-webkit-keyframes fall {
+  to {
+    transform: translateY(105vh);
+  }
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(105vh);
+  }
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  position: absolute;
+  right: 10%;
+}
+
+header button {
+  width: auto;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.384);
+  border: 0;
+  font-size: xx-large;
+  margin: 1vh;
+}
+
+header button:hover {
+  color: rgba(255, 255, 255, 0.644);
+}/*# sourceMappingURL=style.css.map */

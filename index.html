@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/style.scss">
+    <title>KL4AUD1J.US</title>
+</head>
+<body>
+    <header>
+        <button>About</button>
+        <button>Carrer</button>
+        <button>Certificates & Diplomas</button>
+        <button></button>
+    </header>
+    <main>
+        <div id="backgroundDiv"></div>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        setInterval(createMatrix, 100);
+
+        function createMatrix() {
+            const matrix = document.createElement('img');
+            matrix.classList.add('matrix');
+            matrix.src = "public/" + Math.floor(Math.random() * 9) + ".png";
+            matrix.style.left = Math.random() * window.innerWidth + 'px';
+            matrix.style.width = Math.random() * (50 -20)+20 + 'px';
+            matrix.style.animationDuration = Math.random() * 3 + 2 + 's';
+
+            document.getElementById("backgroundDiv").appendChild(matrix);
+            setTimeout(() => {
+                matrix.remove()
+            }, 10000)
+        }
+    </script>
+</body>
+</html>

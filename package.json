@@ -1,0 +1,23 @@
+{
+  "name": "potfolio",
+  "version": "1.0.0",
+  "description": "mano portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kaludasi/kl4ud1jus.git"
+  },
+  "keywords": [
+    "potfolio",
+    "Klaudijus"
+  ],
+  "author": "Klaudijus Simokaitis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kaludasi/kl4ud1jus/issues"
+  },
+  "homepage": "https://github.com/Kaludasi/kl4ud1jus#readme"
+}
